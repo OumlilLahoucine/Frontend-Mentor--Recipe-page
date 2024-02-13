@@ -25,8 +25,8 @@ The result:
 
 ### Links
 
-- Solution URL: [Frontend-Mentor--Recipe-page: Code](https://github.com/OumlilLahoucine/Frontend-Mentor--Recipe-page)
-- Live Site URL: [Frontend-Mentor--Recipe-page: live](https://oumlillahoucine.github.io/Frontend-Mentor--Recipe-page/)
+- Solution URL: [Frontend-Mentor--Recipe-page-code](https://github.com/OumlilLahoucine/Frontend-Mentor--Recipe-page)
+- Live Site URL: [Frontend-Mentor--Recipe-page-live](https://oumlillahoucine.github.io/Frontend-Mentor--Recipe-page/)
 
 <!-- ## My process -->
 
