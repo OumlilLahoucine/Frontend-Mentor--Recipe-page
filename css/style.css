@@ -1,0 +1,230 @@
+/* /////////////////////////////////////// */
+/* General styles */
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+  --blue: hsl(228, 45%, 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font size = 10px --> 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", Arial, sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--eggshell);
+  font-weight: 400;
+}
+
+p,
+li {
+  color: var(--wenge-brown);
+  line-height: 1.8;
+}
+
+/* Container */
+
+.container {
+  max-width: 72rem;
+  margin: 12.8rem auto 9.6rem;
+  background-color: var(--white);
+  padding: 4rem;
+  border-radius: 2.4rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+}
+
+/* Headlines */
+.primary-headline,
+.secondary-headline {
+  font-family: "Young Serif", Times, serif;
+  font-weight: 400;
+}
+
+.primary-headline {
+  color: var(--dark-charcoal);
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+.secondary-headline {
+  color: var(--nutmeg);
+  font-size: 3rem;
+  margin-bottom: 1.6rem;
+}
+
+/* List & items */
+.list {
+  list-style: none;
+  list-style-position: inside;
+  margin-left: 1rem;
+}
+
+.item::before {
+  content: "\2022";
+  font-size: 2rem;
+  /* margin-right: 1em; */
+  font-weight: 500;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+/*/////////////////////////////////
+/* Header */
+
+.header {
+  margin-bottom: 3rem;
+}
+.overview-img {
+  width: 100%;
+  border-radius: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+/*/////////////////////////////////
+/* Preparation Time */
+
+.preparation-time {
+  background-color: var(--rose-white);
+  padding: 2rem 3rem;
+  border-radius: 1.2rem;
+}
+
+.preparation-time-title {
+  color: var(--dark-raspberry);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/*/////////////////////////////////
+/* Main */
+
+/* Only the 3 sections (Ingredient, Instructions and Nutrition */
+.main section {
+  padding-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.main section:last-child {
+  padding-bottom: 0;
+}
+
+/* For all the sections and the Nutrition table rows*/
+.main section,
+.main .row {
+  border-bottom: 0.1rem solid var(--light-grey);
+}
+
+.main section:first-child,
+.main section:last-child,
+.main .row:last-child {
+  border: none;
+}
+
+/*///////////////////////////////////////////*/
+/* Ingredients */
+/* The style is general (reusable) : list and item */
+
+/*/////////////////////////////////
+/* Instructions */
+
+.instructions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.instruction-item {
+  display: flex;
+  align-items: start;
+  gap: 2rem;
+}
+.instruction-item span {
+  color: var(--nutmeg);
+}
+
+/* /////////////////////////////////////// */
+/* Nutrition */
+
+.nutrition-description {
+  margin-bottom: 1.6rem;
+}
+
+.table .row {
+  display: flex;
+  padding: 1.4rem 0;
+}
+
+.row span {
+  width: 50%;
+  padding-left: 3rem;
+}
+
+.row .row-title {
+  color: var(--wenge-brown);
+}
+
+.row .row-value {
+  color: var(--nutmeg);
+  font-weight: 600;
+}
+
+/* /////////////////////////////////////// */
+/* Footer */
+
+.attribution {
+  margin-bottom: 1rem;
+}
+
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--blue);
+}
+
+/* -------------------------------- */
+/* Mobile screen */
+
+@media (max-width: 375px) {
+  .container {
+    margin: 0 0 2rem;
+    border-radius: 0;
+    padding: 0 0 2rem;
+    border-bottom-left-radius: 1.6rem;
+    border-bottom-right-radius: 1.6rem;
+  }
+
+  .primary-headline {
+    font-size: 3.6rem;
+  }
+
+  .overview-img {
+    border-radius: 0;
+  }
+
+  .header-box,
+  .main {
+    margin: 0 3rem;
+  }
+}
